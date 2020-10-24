@@ -89,8 +89,10 @@ export default function Chart({ data: { confirmed, recovered, deaths }, countryD
     
 
     return (
-        <div>
+        <div className="container">
+        <div className="Chart">
             {countryData ? BarChart : LineChart}
+        </div>
         </div>
     )
 }

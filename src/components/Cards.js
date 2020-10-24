@@ -19,11 +19,11 @@ export default function Cards({ state: { confirmed, recovered, deaths, lastUpdat
     }
 
     return (
-        <div container className={classes.root}>
+        <div container className="container-cards">
             <Container >
                 <Grid container spacing={4}>
-                    <Grid item xs={12} md={3}>
-                        <CardContent>
+                    <Grid item xs={12} md={4}>
+                        <CardContent className="card infected">
                             <Typography color="textSecondary" gutterBottom>
                                 Infected
                             </Typography>
@@ -38,8 +38,8 @@ export default function Cards({ state: { confirmed, recovered, deaths, lastUpdat
                             </Typography>
                         </CardContent>
                     </Grid>
-                    <Grid item xs={12} md={3}>
-                        <CardContent>
+                    <Grid item xs={12} md={4}>
+                        <CardContent className="card recovered">
                             <Typography color="textSecondary" gutterBottom>
                                 Recovered
                             </Typography>
@@ -54,10 +54,10 @@ export default function Cards({ state: { confirmed, recovered, deaths, lastUpdat
                             </Typography>
                         </CardContent>
                     </Grid>
-                    <Grid item xs={12} md={3}>
-                        <CardContent>
+                    <Grid item xs={12} md={4}>
+                        <CardContent className="card deaths">
                             <Typography color="textSecondary" gutterBottom>
-                                deaths
+                                Deaths
                             </Typography>
                             <Typography variant="h5">
                                 <CountUp start={0} end={deaths.value} duration={2.75} separator="," />

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+body{
+    background-color: beige;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:  50px;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+.container-cards{
+   margin: 40px 0px;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+.card{
+    background-color: white;
+    width: 80%;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.9);
+    
+    border-radius: 5px;
+    
+}
+.infected{
+    border-bottom: 6px solid rgba(0, 0, 255, 0.5);
+}
+.recovered{
+    border-bottom: 6px solid rgba(0, 255, 0, 0.5);
+}
+.deaths{
+    border-bottom: 6px solid rgba(255, 0, 0, 0.5);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Chart{
+    margin: 30px 0;
+    width: 60%;
+}
+
+.countrypicker{
+    margin:  20px 0;
+}

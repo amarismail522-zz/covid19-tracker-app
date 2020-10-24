@@ -24,6 +24,7 @@ export default function CountryPicker({ setCountry }) {
 
 
     return (
+        <div className="container countrypicker">
         <FormControl className={"form-control"}>
             <NativeSelect
                 defaultValue=""
@@ -39,6 +40,7 @@ export default function CountryPicker({ setCountry }) {
                 ))}
             </NativeSelect>
         </FormControl>
+        </div>
     )
 }
 

@@ -46,7 +46,7 @@ export default function App() {
   return (
     <div className="App">
       <div>
-        <h1>COVID-19 TRACKER APP</h1>
+        <h1 className="header">COVID-19 TRACKER APP</h1>
         <Cards state={data} />
         <CountryPicker setCountry={ setCountry } />
         <Chart data={ data } countryData={ countryData } />

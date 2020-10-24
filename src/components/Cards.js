@@ -1,18 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import CountUp from "react-countup";
-import { Card, CardContent, Typography, Grid, Container } from '@material-ui/core';
+import {  CardContent, Typography, Grid, Container } from '@material-ui/core';
 
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-}));
+
 
 export default function Cards({ state: { confirmed, recovered, deaths, lastUpdate }}) {
-    const classes = useStyles();
+    
 
     if(!confirmed){
         return "Loading...";

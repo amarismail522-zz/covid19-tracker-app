@@ -9,7 +9,8 @@
     justify-content: center;
 } */
 body{
-    background-color: beige;
+    /* background-color: beige; */
+    background-color: rgb(164, 240, 236);
 }
 
 .header{

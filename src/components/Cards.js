@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import CountUp from "react-countup";
 import {  CardContent, Typography, Grid, Container } from '@material-ui/core';
 
